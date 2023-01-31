@@ -146,13 +146,11 @@ const NavMenu = () => {
           <NavigationMenuContent>
             <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-2 z-50">
               {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
+                <Link key={component.title} href={component.href}>
+                  <ListItem title={component.title}>
+                    {component.description}
+                  </ListItem>
+                </Link>
               ))}
             </ul>
           </NavigationMenuContent>
@@ -162,13 +160,11 @@ const NavMenu = () => {
           <NavigationMenuContent>
             <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-3">
               {web3projects.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
+                <Link key={component.title} href={component.href}>
+                  <ListItem title={component.title}>
+                    {component.description}
+                  </ListItem>
+                </Link>
               ))}
             </ul>
           </NavigationMenuContent>
