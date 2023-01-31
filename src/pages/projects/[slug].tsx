@@ -51,6 +51,71 @@ const components: {
     github: '',
     livedemo: '',
   },
+  {
+    title: 'Soulmates | HackFEVM Grand Prize Winner',
+    href: '/projects/soulmates',
+    description:
+      'A Soulbound Token (SBT) issuance engine, built on the Filecoin Virtual Machine. Built with Next.js + Tailwind CSS.',
+    image: '/soulmates.png',
+    stack: ['Next.js', 'Tailwind CSS', 'Ethers.js', 'FileCoin', 'IPFS'],
+    github: 'https://github.com/rohanagarwal/hack-fevm-submission',
+    livedemo: 'https://hackfevm-frontend.vercel.app/',
+  },
+  {
+    title: 'SafeConnect | ETH New York',
+    href: '/projects/safeconnect',
+    description:
+      'A safety protocol built on WalletConnect that alerts users of malicious websites. Built with Next.js + Tailwind CSS.',
+    image: '/safeconnect.png',
+    stack: ['Next.js', 'Tailwind CSS', 'Ethers.js', 'WalletConnect'],
+    github: 'https://github.com/ETH-NYC-Hackathon/safe-connect-frontend',
+    livedemo: 'https://github.com/ETH-NYC-Hackathon/safe-connect-frontend',
+  },
+  {
+    title: 'Doodl',
+    href: '/projects/doodl',
+    description:
+      'A decentralized, community-driven art competition, built on Polygon.',
+
+    image: '/doodl.png',
+    stack: ['Next.js', 'Tailwind CSS', 'Truffle', 'IPFS', 'Polygon'],
+    github: 'https://github.com/ChrisAbdo/Doodl-Official',
+    livedemo: 'https://doodl-official.vercel.app/',
+  },
+  {
+    title: 'DeStemr',
+    href: '/projects/destemr',
+    description:
+      'A decentralized music NFT marketplace made for artists to sell stems. Built on Polygon.',
+
+    image: '/destemr.png',
+    stack: ['Next.js', 'Tailwind CSS', 'Truffle', 'IPFS', 'Polygon'],
+    github: 'https://github.com/ChrisAbdo/ETH-SF-DeStemr',
+    livedemo: 'https://eth-sf-destemr.vercel.app',
+  },
+  {
+    title: 'Etherwav',
+    href: '/projects/etherwav',
+    description:
+      'A decentralized, community driven + rewarding web radio station. Built on Polygon.',
+
+    image: '/etherwav.png',
+    stack: ['Next.js', 'Tailwind CSS', 'Truffle', 'IPFS', 'Polygon'],
+    github: 'https://github.com/ChrisAbdo/Etherwav-Next13',
+    livedemo:
+      'https://etherwav-next13-5r9qq53cb-chrisjabdo-gmailcom.vercel.app/',
+  },
+  {
+    title: 'Lenspire',
+    href: '/projects/lenspire',
+    description:
+      'A UI/UX design studio built ontop of Polygon and Lens Protocol.',
+
+    image: '/lenspire.png',
+    stack: ['Next.js', 'Tailwind CSS', 'Truffle', 'IPFS', 'Polygon'],
+    github: 'https://github.com/ChrisAbdo/lenspire',
+    livedemo: 'https://lenspire-cx0tqfv8d-chrisjabdo-gmailcom.vercel.app/',
+  },
 ];
 
 const Slug = () => {
@@ -70,10 +135,12 @@ const Slug = () => {
                 alt={component.title}
                 width={400}
                 height={400}
-                className="rounded-xl"
+                className="rounded-xl min-h-[400px] min-w-[400px]"
               />{' '}
               <div>
-                <h1 className="text-5xl font-bold">{component.title}</h1>
+                <h1 className="text-5xl font-bold max-w-lg">
+                  {component.title}
+                </h1>
                 <p className="py-6 text-2xl max-w-lg">
                   {component.description}
                 </p>

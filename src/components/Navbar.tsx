@@ -17,7 +17,7 @@ const Navbar = () => {
     return null;
   }
   return (
-    <div className="navbar">
+    <div className="navbar sticky top-0 z-50 dark:bg-black bg-white">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">

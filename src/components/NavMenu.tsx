@@ -45,34 +45,40 @@ const components: {
 
 const web3projects: { title: string; href: string; description: string }[] = [
   {
-    title: 'Soulmates | HackFEVM',
-    href: '/docs/primitives/alert-dialog',
+    title: 'Soulmates | HackFEVM Grand Prize Winner',
+    href: '/projects/soulmates',
     description:
       'A soulbound token (SBT) issuance engine, built on the Filecoin Virtual Machine.',
   },
   {
     title: 'SafeConnect | ETH NYC',
-    href: '/docs/primitives/hover-card',
+    href: '/projects/safeconnect',
     description:
       'A safety protocol built on WalletConnect to detect malicious websites and prevent phishing attacks.',
   },
   {
     title: 'Doodl',
-    href: '/docs/primitives/progress',
+    href: '/projects/doodl',
     description:
       'A decentralized, community-driven art competition, built on Polygon.',
   },
   {
     title: 'DeStemr | ETH San Francisco',
-    href: '/docs/primitives/scroll-area',
+    href: '/projects/destemr',
     description:
       'A decentralized music NFT marketplace made for artists to sell stems. Built on Polygon.',
   },
   {
     title: 'Etherwav',
-    href: '/docs/primitives/tabs',
+    href: '/projects/etherwav',
     description:
       'A decentralized, community driven + rewarding web radio station. Built on Polygon.',
+  },
+  {
+    title: 'Lenspire',
+    href: '/projects/lenspire',
+    description:
+      'A UI/UX design studio built ontop of Polygon and Lens Protocol.',
   },
 ];
 
@@ -154,7 +160,7 @@ const NavMenu = () => {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Web3 Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
+            <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-3">
               {web3projects.map((component) => (
                 <ListItem
                   key={component.title}

@@ -10,7 +10,7 @@ export default function Home() {
       <div className=" h-64 flex items-center justify-center px-16">
         <div className="relative w-60 max-w-lg z-40">
           <div className="absolute top-0  w-36 h-60 lg:w-96 lg:h-80 bg-[#845EC2] rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob"></div>
-          <div className="absolute lg:left-48 top-24 w-36 h-60 lg:w-96 lg:h-80 bg-[#2C73D2] rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
+          <div className="absolute lg:left-48 top-20 w-36 h-52 lg:w-96 lg:h-80 bg-[#2C73D2] rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-2000"></div>
           <div className="absolute -left-48 -bottom-12 w-36 h-60 lg:w-96 lg:h-80 bg-[#D65DB1] rounded-full mix-blend-multiply filter blur-xl opacity-40 animate-blob animation-delay-4000"></div>
         </div>
       </div>
