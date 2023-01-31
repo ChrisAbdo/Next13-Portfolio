@@ -1,6 +1,5 @@
 import React from 'react';
 import { cn } from 'lib/utils';
-
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -13,41 +12,66 @@ import {
 
 import Link from 'next/link';
 
-const components: { title: string; href: string; description: string }[] = [
+const components: {
+  title: string;
+  href: string;
+  description: string;
+}[] = [
   {
-    title: 'Alert Dialog',
+    title: 'MovieGPT',
+    href: '/projects/moviegpt',
+    description:
+      'An AI movie recommendation platform built with GPT-3 and Next.js.',
+  },
+  {
+    title: 'GrammarScoreAI',
+    href: '/projects/grammarscoreai',
+    description:
+      'An AI writing companion designed to help you improve your writing. Built with Next.js + GPT-3.',
+  },
+  {
+    title: 'SmoothTalker',
+    href: '/projects/smoothtalker',
+    description: 'An AI pickup line generator built with GPT-3 and Next.js.',
+  },
+  {
+    title: 'C. Elegans ML/AI @ NJIT',
+    href: '/projects/njit',
+    description:
+      'A 6 week research project at NJIT where I built a biomimetic AI navigation system.',
+  },
+];
+
+const web3projects: { title: string; href: string; description: string }[] = [
+  {
+    title: 'Soulmates | HackFEVM',
     href: '/docs/primitives/alert-dialog',
     description:
-      'A modal dialog that interrupts the user with important content and expects a response.',
+      'A soulbound token (SBT) issuance engine, built on the Filecoin Virtual Machine.',
   },
   {
-    title: 'Hover Card',
+    title: 'SafeConnect | ETH NYC',
     href: '/docs/primitives/hover-card',
     description:
-      'For sighted users to preview content available behind a link.',
+      'A safety protocol built on WalletConnect to detect malicious websites and prevent phishing attacks.',
   },
   {
-    title: 'Progress',
+    title: 'Doodl',
     href: '/docs/primitives/progress',
     description:
-      'Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.',
+      'A decentralized, community-driven art competition, built on Polygon.',
   },
   {
-    title: 'Scroll-area',
+    title: 'DeStemr | ETH San Francisco',
     href: '/docs/primitives/scroll-area',
-    description: 'Visually or semantically separates content.',
+    description:
+      'A decentralized music NFT marketplace made for artists to sell stems. Built on Polygon.',
   },
   {
-    title: 'Tabs',
+    title: 'Etherwav',
     href: '/docs/primitives/tabs',
     description:
-      'A set of layered sections of content—known as tab panels—that are displayed one at a time.',
-  },
-  {
-    title: 'Tooltip',
-    href: '/docs/primitives/tooltip',
-    description:
-      'A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.',
+      'A decentralized, community driven + rewarding web radio station. Built on Polygon.',
   },
 ];
 
@@ -120,7 +144,7 @@ const NavMenu = () => {
           <NavigationMenuTrigger>Web3 Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[600px] gap-3 p-4 md:grid-cols-2">
-              {components.map((component) => (
+              {web3projects.map((component) => (
                 <ListItem
                   key={component.title}
                   title={component.title}

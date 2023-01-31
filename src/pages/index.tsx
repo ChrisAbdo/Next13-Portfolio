@@ -1,9 +1,8 @@
 'use client';
 
 import * as React from 'react';
-import Image from 'next/image';
 import Typewriter from 'typewriter-effect';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
@@ -28,12 +27,7 @@ export default function Home() {
           <h1 className="text-5xl font-bold">
             <Typewriter
               options={{
-                strings: [
-                  'Hello World!',
-                  'مرحبا بالعالم!',
-                  'こんにちは世界',
-                  '¡Hola Mundo!',
-                ],
+                strings: ['Hello World!', 'مرحبا بالعالم!', '¡Hola Mundo!'],
                 autoStart: true,
                 loop: true,
               }}
