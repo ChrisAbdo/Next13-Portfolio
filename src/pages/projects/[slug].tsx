@@ -45,7 +45,7 @@ const components: {
     title: 'C. Elegans ML/AI @ NJIT',
     href: '/projects/njit',
     description:
-      'A 6 week research project at NJIT where I built a biomimetic AI navigation system.',
+      'A 6 week research project at NJIT where I built a biomimetic AI navigation system simulating the C. elegans worm.',
     image: '/njit.png',
     stack: ['Python', 'MATLAB', 'Raspberry Pi'],
     github: '',
@@ -144,6 +144,7 @@ const Slug = () => {
                 <p className="py-6 text-2xl max-w-lg">
                   {component.description}
                 </p>
+                Built with{' '}
                 <div className="flex flex-wrap gap-2">
                   {component.stack.map((s, i) => (
                     <span
