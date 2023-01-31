@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/navigation-menu';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 const components: {
   title: string;
@@ -100,6 +101,16 @@ const NavMenu = () => {
                     href="/"
                   >
                     {/* <Icons.logo className="h-6 w-6 text-white" /> */}
+                    <div className="avatar">
+                      <div className="w-24 rounded-full">
+                        <Image
+                          src="/chris-nobg.png"
+                          width={96}
+                          height={96}
+                          alt="Chris Abdo"
+                        />
+                      </div>
+                    </div>
                     <div className="mt-4 mb-2 text-lg font-medium text-white">
                       Christopher Abdo
                     </div>
